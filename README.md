@@ -89,10 +89,10 @@ Finally, it is also important to note the limitations of the model and that the 
 ## Repository Structure
 
 ```
-├── data
-├── images
+├── Data
+├── Images
 ├── .gitignore
-├── Housing Market Analysis Slides.pdf
-├── Housing Market Linear Regression.ipynb
+├── NFL Combine Classification Presentation Slides.pdf
+├── NFL Combine Draft Classification.ipynb
 └── README.md
 ```
