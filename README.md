@@ -48,6 +48,10 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
 
 ## Modeling 
 
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Model%20Scores.png" width="480" height="350">
+</p> 
+
 
 ## Evaluation
 <p align="center">
