@@ -29,11 +29,34 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
 
 ## Data Understanding & Visualization
 
+
+
+
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Combine_Positions.png" width="650" height="350">
+</p> 
+
+
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Top%20Drafted%20Schools.png" width="850" height="340">
+</p> 
+
+
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/median%20combine%20perf.png" width="850" height="450">
+</p> 
+
 ## Modeling 
 
 
 ## Evaluation
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/xgb%20matrix.png" width="340" height="250">
+</p> 
 
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/top15_important_features.png" width="750" height="450">
+</p> 
 
 ## Conclusions & Recommendations
 **Model Performance**
