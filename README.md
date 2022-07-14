@@ -42,7 +42,7 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
 **Positions in the NFL Combine**: When breaking down the distribution of player positions in the draft, we notice that the skill positions such as wide receiver, cornerback, and running back, dominate the dataset. While special teams and more generic positions such as "defensive lineman", "defensive back", and "edge" are less frequent. 
 
 <p align="center">
-  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Top%20Drafted%20Schools.png" width="850" height="340">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Top%20Drafted%20Schools.png" width="950" height="340">
 </p> 
 
 **College Powerhouses**: There is no surprise that the college powerhouses like Alabama, LSU, and Ohio State produce the most NFL drafted talent. However, interesting to note the different positions drafted out of each college varies and can likely be attributed to the school's overall football program structure or play schemes during games.  
