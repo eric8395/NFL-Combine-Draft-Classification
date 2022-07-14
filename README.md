@@ -23,28 +23,31 @@ These are questions that many fans ask to this day and NFL teams try to interpre
 **Stakeholders:** The New York Giants front office (General Manager, President, Scouting Department). 
 
 ## The Dataset
-In this analysis, player combine data was scraped from <a href = "https://www.pro-football-reference.com/">Pro-Football Reference</a> over the last 22 years (2000-2022). 
+In this analysis, player combine data was scraped from <a href = "https://www.pro-football-reference.com/">Pro-Football Reference</a> over the last 22 years (2000-2022). For this analysis, players are classified as 1 for `Drafted` and 0 for `Undrafted`. 
 
-For further information on the drills/measurables, this <a href = "https://ftw.usatoday.com/lists/nfl-combine-drills-three-cone-shuttle-explained"> USA Today article </a>  provides an in depth explanation.
+For further information on the drills/measurables, this <a href = "https://ftw.usatoday.com/lists/nfl-combine-drills-three-cone-shuttle-explained"> USA Today article </a> provides an in depth explanation.
 
 ## Data Understanding & Visualization
 
-
-
+<p align="center">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Position_Category_Drafted.png" width="650" height="350">
+</p> 
+Of the 7600+ entries of NFL combine data, approximately 2/3 of the data consists of drafted player. 
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Combine_Positions.png" width="650" height="350">
 </p> 
-
+When breaking down the distribution of player positions in the draft, we notice that the skill positions such as wide receiver, cornerback, and running back, dominate the dataset. While special teams and more generic positions such as "defensive lineman", "defensive back", and "edge" are less frequent. 
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Top%20Drafted%20Schools.png" width="850" height="340">
 </p> 
-
+There is no surprise that the college powerhouses like Alabama, LSU, and Ohio State produce the most NFL drafted talent. However, interesting to note the different positions drafted out of each college varies and can likely be attributed to the school's overall football program structure or play schemes during games.  
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/median%20combine%20perf.png" width="850" height="450">
 </p> 
+At a glimpse, we can further examine the median performance in drills by position and draft status (where green represents drafted and red represents undrafted). When categorizing by positions, we notice an obvious trend where drafted players tend to perform better at the combine drills than undrafted players. 
 
 ## Modeling 
 
