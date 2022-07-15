@@ -85,7 +85,7 @@ The following details each individual model's training and test F1-Scores and so
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Model%20Scores.png" width="520" height="350">
 </p> 
 
-Ultimately, the 8th Model - XGBoost performed the best when taking into account the AUC and is slightly higher than the Random Forst and Bagging Decision Tree Classifiers. 
+Ultimately, the 8th Model - XGBoost performed the best when taking into account the AUC and is slightly higher than the Random Forest and Bagging Decision Tree Classifiers. 
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/ROC%20AUC.png" width="380" height="280">
