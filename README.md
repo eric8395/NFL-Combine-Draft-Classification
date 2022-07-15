@@ -33,7 +33,7 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Position_Category_Drafted.png" width="650" height="350">
 </p> 
 
-**Players Drafted By Team Category**: Of the 7600+ entries of NFL combine data, approximately 2/3 of the data consists of drafted player. 
+**Players Drafted By Team Category**: Of the 7600+ entries of NFL combine data, approximately 2/3 of the data consists of a drafted player. 
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Combine_Positions2.png" width="650" height="350">
