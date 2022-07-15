@@ -45,13 +45,13 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Top%20Drafted%20Schools.png" width="950" height="340">
 </p> 
 
-**College Powerhouses**: There is no surprise that the college powerhouses like Alabama, LSU, and Ohio State produce the most NFL drafted talent. However, interesting to note the different positions drafted out of each college varies and can likely be attributed to the school's overall football program structure or play schemes during games.  
+**College Powerhouses**: There is no surprise that the college powerhouses like Alabama, LSU, and Ohio State produce the most NFL drafted talent. However, it is interesting to note the variation of quantity of drafted players at each position for each college. This can likely be attributed to each school's unique football program structure, team personnel strategy during games, and importance of coaching the position. 
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/median%20combine%20perf.png" width="850" height="450">
 </p> 
 
-**The Measurables at a Glimpse**: We can further examine the median performance in drills sorted by position and draft status (where green represents drafted and red represents undrafted). When categorizing by positions, we notice an obvious trend where drafted players tend to perform better at the combine drills than undrafted players. 
+**The Measurables at a Glimpse**: We further examine the median performance in drills sorted by position and draft status (where green represents drafted and red represents undrafted). When categorizing by positions, we notice an obvious trend where drafted players tend to perform better at the combine drills than undrafted players. 
 
 ## Modeling 
 Following a train-test split whereby 25% of the entire dataset was held out, an iterative modeling process was implemented to determine the most accurate model for the testing set. For reference, we want to have a better baseline accuracy score of about 63% (those who were drafted) if our model was just simply randomly guessing. 
@@ -60,9 +60,9 @@ Following a train-test split whereby 25% of the entire dataset was held out, an 
 
 - False Positives are players who were labeled as 'Drafted' but they were actually 'Undrafted'
 
-- False Negatives are players who were labeled as 'Undrafted' but they were actually 'Drafted.
+- False Negatives are players who were labeled as 'Undrafted' but they were actually 'Drafted'.
 
-A baseline logistic regression model was implemented first with a Testing F1-Score of 79%. Additional models utilizing various classification techniques were implemented thereafter with a grid-search performed to maximize the F1-Score. 5-fold cross validation was performed with each iterative model as well. 
+A baseline logistic regression model was implemented first with a Testing F1-Score of 79%. Additional models utilizing various classification techniques were implemented thereafter with a grid-search performed on each model to optimize the F1-Score. 5-fold cross validation was also performed with each iterative model. 
 
 The following models were implemented on the testing set:
 
@@ -80,11 +80,13 @@ The following models were implemented on the testing set:
 
 ## Evaluation
 
+The following details each individual model's training and test F1-Scores and sorted by the highest AUC (Area Under the Curve - measuring how well the model was able to classify drafted/undrafted). 
+
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Model%20Scores.png" width="520" height="350">
 </p> 
 
-Ultimately, the 8th Model - XGBoost performed the best when taking into account the AUC (Area Under the Curve - measuring how well the model was able to classify drafted/undrafted) and is slightly higher than the Random Forst and Bagging Decision Tree Classifiers. 
+Ultimately, the 8th Model - XGBoost performed the best when taking into account the AUC and is slightly higher than the Random Forst and Bagging Decision Tree Classifiers. 
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/ROC%20AUC.png" width="380" height="280">
