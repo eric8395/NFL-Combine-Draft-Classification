@@ -69,8 +69,7 @@ The following models were implemented on the testing set:
 1. Baseline Logistic Regression
 2. Best Parameters Logistic Regression
 3. Liblinear Solver Regression 
-4. Decision Tree
-4B. Tuned Decision Tree
+4. Decision Tree <br>4B. Tuned Decision Tree
 5. KNN (K-Nearest Neighbors)
 6. Adaboost
 7. Gradient Boost
