@@ -36,7 +36,7 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
 **Players Drafted By Team Category**: Of the 7600+ entries of NFL combine data, approximately 2/3 of the data consists of drafted player. 
 
 <p align="center">
-  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Combine_Positions.png" width="650" height="350">
+  <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/Combine_Positions2.png" width="650" height="350">
 </p> 
 
 **Positions in the NFL Combine**: When breaking down the distribution of player positions in the draft, we notice that the skill positions such as wide receiver, cornerback, and running back, dominate the dataset. While special teams and more generic positions such as "defensive lineman", "defensive back", and "edge" are less frequent. 
@@ -54,13 +54,38 @@ For further information on the drills/measurables, this <a href = "https://ftw.u
 **The Measurables at a Glimpse**: We can further examine the median performance in drills sorted by position and draft status (where green represents drafted and red represents undrafted). When categorizing by positions, we notice an obvious trend where drafted players tend to perform better at the combine drills than undrafted players. 
 
 ## Modeling 
+Following a train-test split whereby 25% of the entire dataset was held out, an iterative modeling process was implemented to determine the most accurate model for the testing set. For reference, we want to have a better baseline accuracy score of about 63% (those who were drafted) if our model was just simply randomly guessing. 
+
+**F1-Score** was the main metric used to determine model accuracy which takes into consideration a balance between the False Positives and False Negatives. In other words, we want to have a 'harmonized' balance between precision and recall and take into consideration the False Positives and False Negatives.  
+
+- False Positives are players who were labeled as 'Drafted' but they were actually 'Undrafted'
+
+- False Negatives are players who were labeled as 'Undrafted' but they were actually 'Drafted.
+
+A baseline logistic regression model was implemented first with a Testing F1-Score of 79%. Additional models utilizing various classification techniques were implemented thereafter with a grid-search performed to maximize the F1-Score. 5-fold cross validation was performed with each iterative model as well. 
+
+The following models were implemented on the testing set:
+
+1. Baseline Logistic Regression
+2. Best Parameters Logistic Regression
+3. Liblinear Solver Regression 
+4. Decision Tree
+4B. Tuned Decision Tree
+5. KNN (K-Nearest Neighbors)
+6. Adaboost
+7. Gradient Boost
+8. XGBoost
+9. Bagging Decision Tree Classifier
+10. Random Forest Classifier
+
+
+
+## Evaluation
 
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Model%20Scores.png" width="480" height="350">
 </p> 
 
-
-## Evaluation
 <p align="center">
   <img src = "https://github.com/eric8395/NFL-Combine-Draft-Classification/blob/main/Images/Plots/xgb%20matrix.png" width="340" height="250">
 </p> 
