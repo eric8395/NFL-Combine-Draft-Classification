@@ -1,4 +1,4 @@
-# NFL-Combine-Draft-Classification
+# *The Pick Is In! NFL Draft Classification with Combine Metrics*
 ### Eric Au
 
 <p align="center">
